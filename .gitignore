@@ -1,3 +1,7 @@
+# TMP for the great rework
+static/js/**
+static/css/**
+
 # Build output
 **/.cache/**
 deploy_logs/**
