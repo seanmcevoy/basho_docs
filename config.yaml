@@ -17,6 +17,9 @@ blackfriday:
 # Ignore files (such as the reference links list) on build
 ignoreFiles: [
     "\\_reference-links.md$",
+    "dataplatform",
+    # "community",
+    "riak",
   ]
 
 # Default directory to build the completed site
