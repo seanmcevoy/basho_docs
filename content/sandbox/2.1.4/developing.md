@@ -5,7 +5,7 @@ project: "sandbox"
 project_version: "2.1.4"
 menu:
   sandbox-2.1.4:
-    name: "Developing"
+    name: "Developing intricate, elongated verbiage"
     identifier: "developing"
     weight: 300
     pre: lambda

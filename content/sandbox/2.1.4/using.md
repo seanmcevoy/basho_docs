@@ -5,7 +5,7 @@ project: "sandbox"
 project_version: "2.1.4"
 menu:
   sandbox-2.1.4:
-    name: "Using"
+    name: "Using a lot of sml wrds"
     identifier: "managing"
     weight: 201
     pre: database
