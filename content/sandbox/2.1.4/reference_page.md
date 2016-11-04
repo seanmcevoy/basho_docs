@@ -192,6 +192,23 @@ Parameter | Default | Description
 `pr` | `0` | How many [vnodes][glossary vnode] must respond for a read to be deemed successful
 `notfound_ok` | `true` | If set to `true`, if the first vnode to respond doesn't have a copy of the object, Riak will deem the failure authoritative and immediately return a `notfound` error to the client
 
+And here are some other ways of building tables.
+
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don't need to make the
+raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+
 [glossary vnode]: /riak/kv/2.1.4/learn/glossary/#vnode
 
 ## Code Blocks
@@ -376,4 +393,3 @@ SemVer.parse = (str) ->
     return [document.title, "Hello JavaScript"].join(": ");
   }`
 ```
-
