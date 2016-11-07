@@ -170,32 +170,33 @@ $ ->
   version_badge = $('.version-selector__badge')
   version_list  = $('.version-selector__list')
 
-  # When the badge is clicked, the list should toggle between shown and hidden.
-  version_badge.on('click',
-    () ->
-      if 0 < version_badge.attr('class').search(".version-selector__badge--selected")
-        version_list.hide()
-        version_badge.removeClass(".version-selector__badge--selected")
-      else
-        version_list.show()
-        version_badge.addClass(".version-selector__badge--selected")
-      # Consume the event to prevent propagation.
-      false
-  )
+  if version_badge.len
+    # When the badge is clicked, the list should toggle between shown and hidden.
+    version_badge.on('click',
+      () ->
+        if 0 < version_badge.attr('class').search(".version-selector__badge--selected")
+          version_list.hide()
+          version_badge.removeClass(".version-selector__badge--selected")
+        else
+          version_list.show()
+          version_badge.addClass(".version-selector__badge--selected")
+        # Consume the event to prevent propagation.
+        false
+    )
 
-  # When child elements of the list are clicked, nothing should occur. Just
-  # return `true` to allow the event to bubble up.
-  version_list.on('click', '.version-selector__list-element', () -> true )
+    # When child elements of the list are clicked, nothing should occur. Just
+    # return `true` to allow the event to bubble up.
+    version_list.on('click', '.version-selector__list-element', () -> true )
 
-  # When the current or a disabled list element is clicked nothing should
-  # happen, so return `false` to consume the event.
-  version_list.on('click', '.version-selector__list-element--disabled', () -> false )
-  version_list.on('click', '.version-selector__list-element--current',  () -> false )
+    # When the current or a disabled list element is clicked nothing should
+    # happen, so return `false` to consume the event.
+    version_list.on('click', '.version-selector__list-element--disabled', () -> false )
+    version_list.on('click', '.version-selector__list-element--current',  () -> false )
 
-  # When anything else in the document is clicked, we should hide the list.
-  $(document).on('click',
-    () ->
-      if 0 < version_badge.attr('class').search(".version-selector__badge--selected")
-        version_list.hide()
-        version_badge.removeClass(".version-selector__badge--selected")
-  )
+    # When anything else in the document is clicked, we should hide the list.
+    $(document).on('click',
+      () ->
+        if 0 < version_badge.attr('class').search(".version-selector__badge--selected")
+          version_list.hide()
+          version_badge.removeClass(".version-selector__badge--selected")
+    )
