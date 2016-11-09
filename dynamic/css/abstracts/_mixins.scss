@@ -210,3 +210,40 @@
 @mixin rounded-corner($vert, $horiz, $radius: .5rem) {
   border-#{$vert}-#{$horiz}-radius : $radius;
 }
+
+
+/// Apply a directional box-shadow
+/// @author Drew Pirrone-Brusse
+/// @param {Number} size [1rem] - Rough size of the primary shadow (the two
+///                               adjacent sides will receive a subtler shadow).
+/// @param {Color}  color       - The color of the shadow to apply.
+@mixin shadow-top($size: 1rem, $color: $shadow-color) {
+  box-shadow:  0         (-$size/2) ($size*2) (-$size/2) $color;
+}
+
+/// Apply a directional box-shadow
+/// @author Drew Pirrone-Brusse
+/// @param {Number} size [1rem] - Rough size of the primary shadow (the two
+///                               adjacent sides will receive a subtler shadow).
+/// @param {Color}  color       - The color of the shadow to apply.
+@mixin shadow-bottom($size: 1rem, $color: $shadow-color) {
+  box-shadow:  0         ($size/2)  ($size*2) (-$size/2) $color;
+}
+
+/// Apply a directional box-shadow
+/// @author Drew Pirrone-Brusse
+/// @param {Number} size [1rem] - Rough size of the primary shadow (the two
+///                               adjacent sides will receive a subtler shadow).
+/// @param {Color}  color       - The color of the shadow to apply.
+@mixin shadow-left($size: 1rem, $color: $shadow-color) {
+  box-shadow: (-$size/2)  0         ($size*2) (-$size/2) $color;
+}
+
+/// Apply a directional box-shadow
+/// @author Drew Pirrone-Brusse
+/// @param {Number} size [1rem] - Rough size of the primary shadow (the two
+///                               adjacent sides will receive a subtler shadow).
+/// @param {Color}  color       - The color of the shadow to apply.
+@mixin shadow-right($size: 1rem, $color: $shadow-color) {
+  box-shadow: ($size/2)   0         ($size*2) (-$size/2) $color;
+}
