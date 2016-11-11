@@ -36,13 +36,13 @@
 {{ if ( and $project $version ) }}
     <div class="clearfix   selectors">
 
-      <div class="inline-block float-left   selector selector--project">
+      <div class="inline-block float-left    selector selector--project">
         <header class="selector__title">Project</header>
         <button class="selector__btn" type="button">{{ $project | title }}</button>
         <div    class="selector__arrow"></div>
       </div>
 
-      <div class="inline-block float-left   selector selector--version">
+      <div class="inline-block float-right    selector selector--version">
         <header class="selector__title">Versions</header>
         <button class="selector__btn" type="button">{{$version}}</button>
         <div    class="selector__arrow"></div>
