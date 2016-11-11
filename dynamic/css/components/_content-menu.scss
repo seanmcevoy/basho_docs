@@ -60,12 +60,14 @@
 
   //TODO: Another expensive selector. Is it worth a class of its own?
   > a {
-    padding-right : 0.5rem;
+    padding-right   : 0.5rem;
+    text-decoration : none;
 
     color : $gray-50;
 
     @include on-event {
       color : $gray-15;
+      text-decoration : none;
     }
   }
 
