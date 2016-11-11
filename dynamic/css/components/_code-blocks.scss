@@ -50,6 +50,7 @@ $edge_fade_width : 2rem; /* 1 */
 
       @include on-event {
         background : $gray-warm-light;
+        color      : $gray-light;
       }
     }
   }
