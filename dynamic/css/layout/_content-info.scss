@@ -9,9 +9,9 @@
   font-size   : 80%;
   line-height : 1.2;
   text-align  : center;
-  color       : $gray-light;
+  color       : $gray-60;
 
-  border-top : 1px solid $gray-lighter;
+  border-top : 1px solid $gray-85;
 
 
   @include wide-from(md) {
@@ -26,7 +26,7 @@
   }
 
   a {
-    color : $gray-light;
+    color : $gray-60;
     @include on-event {
       color : $cyan;
     }

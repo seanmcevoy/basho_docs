@@ -63,7 +63,7 @@ $fixed-bottom-height : 5rem;
   width       : inherit;
   padding-top : 0.5rem;
 
-  background : $gray-warm-light;
+  background : $gray-warm-97;
   box-shadow : 0.125rem 0 2rem -0.25rem $shadow-hard-color;
 
   @include when-inside('.content-nav--top-size-full') {
@@ -152,7 +152,7 @@ $fixed-bottom-height : 5rem;
   }
 }
 .content-nav__primary {
-  background : $gray-warm-light;
+  background : $gray-warm-97;
   height     : 100%;    /* 1 */
 }
 
