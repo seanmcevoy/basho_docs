@@ -123,6 +123,25 @@ $menu-item-padding-top : 0.60rem;
   }
 }
 
+.content-menu__item--download-link--off {
+// .content-menu__item--download-link {
+  background : $orange-dark;
+  background : $orange;
+  background : $orange-light;
+  background : $orange-lighter;
+  background : $orange-lightest;
+  // color      : $gray-95;
+
+  // box-shadow : 0  0  1rem -0.2rem $shadow-hard-color;
+  // box-shadow : 0  0  1rem -0.2rem $shadow-light-color;
+  box-shadow : 0  0  1rem -0.2rem $shadow-color;
+  margin-bottom : 0.2rem;
+}
+
+.content-menu__download-entry {
+  background : $orange-lightest;
+}
+
 /**
  * Currently selected Content Menu Items
  * Largely just overrides styles set in .content-menu__item and .content-nav.

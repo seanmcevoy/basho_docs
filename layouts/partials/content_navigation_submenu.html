@@ -46,8 +46,8 @@
     <div class="content-menu__item {{if $menu_is_selected }} content-menu__item--selected {{end}}">
 
   {{- if $menu_has_children }}
-      <span class="block float-right   content-menu__menu-toggle
-                  {{if $menu_is_open}} content-menu__menu-toggle--open {{end}}">
+      <span class="block float-right   content-menu__menu-toggle {{/*
+            */}}{{ if $menu_is_open }} content-menu__menu-toggle--open {{end}}">
       </span>
   {{- end }}
 
