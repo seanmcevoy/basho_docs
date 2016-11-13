@@ -97,10 +97,11 @@ $white        : #ffffff;
 
 // Basic Uses
 // ----------
-$font-color        : $gray-30; // Default font color. Emphatically Not Black.
+$font-color : $gray-30; // Default font color. Emphatically Not Black.
 
-$shadow-color      : rgba(0,0,0,0.2); // Default shadow color for box-shadows
-$shadow-hard-color : rgba(0,0,0,0.8); // more intense shadow color, for heavier elements
+$shadow-light-color : rgba(0,0,0,0.1); // Less intense shadow color, for lighter elements
+$shadow-color       : rgba(0,0,0,0.2); // Default shadow color for box-shadows
+$shadow-hard-color  : rgba(0,0,0,0.8); // More intense shadow color, for heavier elements
 
 
 
