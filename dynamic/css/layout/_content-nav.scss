@@ -66,6 +66,8 @@ $fixed-bottom-height : 5rem;
   background : $gray-warm-97;
   box-shadow : 0.125rem 0 2rem -0.25rem $shadow-hard-color;
 
+  transition : height 500ms ease;
+
   @include when-inside('.content-nav--top-size-full') {
     height : $fixed-top-height-full-sm-down;  /* 1 */
   }
@@ -122,6 +124,9 @@ $fixed-bottom-height : 5rem;
 .content-nav__primary__sizing-box {
   position : relative;  /* 2 */
   height   : 100%;      /* 3 */
+
+  transition : top            500ms ease,
+               padding-bottom 500ms ease;
 
   @include when-inside('.content-nav--top-size-full') {
     top            : $fixed-top-height-full-sm-down + $fixed-top-padding-sm-down;  /* 3, 4 */
